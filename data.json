@@ -1,0 +1,57 @@
+[
+  {
+    "model": "catalogApp.category",
+    "pk": 1,
+    "fields": {
+      "name": "Овощи",
+      "description": "все овощи"
+    }
+  },
+  {
+    "model": "catalogApp.category",
+    "pk": 2,
+    "fields": {
+      "name": "Фрукт",
+      "description": "Любые фрукты"
+    }
+  },
+  {
+    "model": "catalogApp.product",
+    "pk": 1,
+    "fields": {
+      "name": "Огупец",
+      "description": "Огурец свежий",
+      "photo": "",
+      "category": 1,
+      "price_for_pcs": 20,
+      "create_date": "2024-02-22",
+      "last_change_date": "2024-02-22"
+    }
+  },
+  {
+    "model": "catalogApp.product",
+    "pk": 2,
+    "fields": {
+      "name": "Апельсин",
+      "description": "Свежий апельсин",
+      "photo": "",
+      "category": 2,
+      "price_for_pcs": 30,
+      "create_date": "2024-02-22",
+      "last_change_date": "2024-02-22"
+    }
+  },
+  {
+    "model": "catalogApp.product",
+    "pk": 4,
+    "fields": {
+      "name": "Яблоко",
+      "description": "Свежее яблоко",
+      "photo": "",
+      "category": 1,
+      "price_for_pcs": 23,
+      "create_date": "2024-02-22",
+      "last_change_date": "2024-02-22"
+    }
+  }
+]
