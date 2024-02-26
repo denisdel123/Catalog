@@ -3,6 +3,18 @@ from django.db import models
 NULLABLE = {'null': True, 'blank': True}
 
 
+class Contacts(models.Model):
+    first_name = models.CharField(max_length=100, verbose_name='Имя')
+    last_name = models.CharField(max_length=100, verbose_name='Фамилия')
+
+    def __str__(self):
+        return f'{self.first_name}'
+
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'
+
+
 class Category(models.Model):
     name = models.CharField(max_length=100, verbose_name='Категория')
     description = models.TextField(**NULLABLE, verbose_name='Описание')
