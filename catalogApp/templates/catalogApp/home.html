@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Главная страница</title>
 </head>
 <body>
-<h1>Привет всем кто это читает!</h1>
-
+    <h1>Последние товары</h1>
+    <ul>
+        {% for product in late_product %}
+            <li>{{ product.name }} - {{ product.price_for_pcs }}</li>
+        {% endfor %}
+    </ul>
 </body>
 </html>

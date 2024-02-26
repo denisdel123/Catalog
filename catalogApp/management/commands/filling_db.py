@@ -1,6 +1,6 @@
 from django.core.management import BaseCommand
 
-from catalogApp.models import Category, Product
+from catalogApp.models import Category, Product, Contacts
 
 
 class Command(BaseCommand):
@@ -26,6 +26,8 @@ class Command(BaseCommand):
             {'name': 'Банан', 'description': 'привезен из Турции', 'category': categoty_f, 'price_for_pcs': 35, },
             {'name': 'Капуста', 'description': 'выращена в деревне', 'category': categoty_v, 'price_for_pcs': 42, },
             {'name': 'Картофель', 'description': 'выращен в теплицах', 'category': categoty_v, 'price_for_pcs': 24, },
+            {'name': 'Апельсин', 'description': 'выращен в теплицах', 'category': categoty_f, 'price_for_pcs': 76, },
+            {'name': 'Огурец', 'description': 'выращен в теплицах', 'category': categoty_v, 'price_for_pcs': 15, },
         ]
 
         product_list = [Product(**product_item) for product_item in product_add]
